@@ -26,6 +26,7 @@ public class CameraControl : MonoBehaviour {
     void SetupGesture() {
         rotateGesture = new RotateGestureRecognizer();
         rotateGesture.Updated += RotateGestureCallBack;
+        //rotateGesture.Updated += RotateGestureCallBack;
         FingersScript.Instance.AddGesture(rotateGesture);
     }
 
