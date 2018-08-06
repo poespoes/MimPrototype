@@ -1561,7 +1561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DPadScript: {fileID: 243728731}
   Mover: {fileID: 113500033}
-  Speed: 250
+  Speed: 20
   MoveDPadToGestureStartLocation: 0
 --- !u!114 &939737261
 MonoBehaviour:
@@ -2110,7 +2110,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 396f38a64d24b7a428bf0162c5eb831d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.92941177}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2453,7 +2453,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.047396, y: -0.23303223}
+  m_Offset: {x: -0.11578953, y: -0.548522}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.15700032, y: 0.5512159}
@@ -2464,7 +2464,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.8, y: 4.55}
+  m_Size: {x: 4.849539, y: 5.1809797}
   m_EdgeRadius: 0
 --- !u!1 &1983622354
 GameObject:
