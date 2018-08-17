@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Control
+  - seedPod
   layers:
   - Default
   - TransparentFX
