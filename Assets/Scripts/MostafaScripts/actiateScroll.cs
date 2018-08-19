@@ -13,7 +13,7 @@ public class actiateScroll : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+       /* if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit hit;
 
@@ -22,15 +22,25 @@ public class actiateScroll : MonoBehaviour {
                 //gameData.GetComponent<sceneData>().canDrag = true;
                 gameData.GetComponent<sceneData>().canDrag = true;
             }
-        }
+        }*/
     }
 
-    void OnCollisionEnter2D(Collision2D col) {
-        Debug.Log("OnCollisionEnter2D");
+    void OnTriggerEnter2D(Collider2D col) { 
+        Debug.Log("Trigger activated");
 
         if (col.gameObject.name == "beam") {
 
+            gameData.GetComponent<sceneData>().canDrag = true;
+        }
+    }
 
+    void OnTriggerExit2D(Collider2D col) {
+        Debug.Log("Trigger deactivated");
+
+        if (col.gameObject.name == "beam") {
+
+            gameData.GetComponent<sceneData>().canDrag = false;
         }
     }
 }
+

@@ -24,7 +24,7 @@ public class checkDrag : MonoBehaviour {
 
         }
 
-        else {
+        else if (drag == false) {
 
             this.gameObject.GetComponent<FingersPanOrbitComponentScript>().enabled = false;
         }
